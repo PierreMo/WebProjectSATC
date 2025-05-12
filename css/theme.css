@@ -1,3 +1,9 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    font-family: Consolas, sans-serif;
+}
+
 @font-face {
     font-family: 'BebasNeue';
     src: url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
@@ -11,5 +17,68 @@
 
 header h1 {
     font-family: 'BebasNeue', sans-serif;
+    color: #40739e;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
 }
 
+header{
+    background-color: black;
+    background-image: url("../images/desCamions.jpg");
+    background-size: cover;
+    height: min-content;
+    padding-bottom: 20px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    background-color: #dcdde1;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 13%;
+}
+
+.postit-item:hover ul {
+    display: block;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+section{
+    padding: 20px;
+    margin-top: 25px;
+    width: 80%;
+    align-self: center;
+    background-color: #f5f6fa;
+    border-radius: 5px;
+    box-shadow:
+            rgba(64, 115, 158, 0.4) 5px 5px,
+            rgba(64, 115, 158, 0.3) 10px 10px,
+            rgba(64, 115, 158, 0.2) 15px 15px,
+            rgba(64, 115, 158, 0.1) 20px 20px,
+            rgba(64, 115, 158, 0.05) 25px 25px;
+
+}
+
+footer{
+    margin-top: 30px;
+    background-color: #7f8fa6;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    color: #273c75;
+}
