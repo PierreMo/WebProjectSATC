@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
+    url('../fonts/BebasNeue-Regular.woff') format('woff'),
+    url('../fonts/BebasNeue-Regular.ttf') format('truetype'),
+    url('../fonts/BebasNeue-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+header h1 {
+    font-family: 'BebasNeue', sans-serif;
+}
+
