@@ -45,7 +45,31 @@ nav a{
     width: 13%;
 }
 
-.postit-item:hover ul {
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    background-color: #192a56;
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+}
+
+.menu-item ul {
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover ul {
     display: block;
 }
 
@@ -82,3 +106,6 @@ footer{
 h1{
     color: #273c75;
 }
+
+
+

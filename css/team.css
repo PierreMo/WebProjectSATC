@@ -1,0 +1,21 @@
+.teamMember{
+    margin: 0 3% 2% 3%;
+    width: 14%;
+
+}
+
+
+
+.team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.name{
+    position: absolute;
+    background-color: red;
+}
+.description{
+    position: absolute;
+}
