@@ -38,7 +38,7 @@ nav{
 }
 nav a{
     text-decoration: none;
-    background-color: #dcdde1;
+    background-color: #dedce1;
     padding: 5px;
     font-size: 20px;
     border-radius: 5px;
@@ -72,6 +72,48 @@ nav a{
 .menu-item:hover ul {
     display: block;
 }
+
+.menu-item ul li {
+    background-color: #273c75;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    background-color: #273c75;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu-item:hover .submenu {
+    max-height: 300px;
+}
+
+.submenu li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #40739e;
+}
+
+.submenu {
+    position: static;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+}
+
+
 
 main{
     display: flex;
