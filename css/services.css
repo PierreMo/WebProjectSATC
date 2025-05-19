@@ -1,0 +1,60 @@
+form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type ="button"], button{
+/align-self: center;
+    background-color: #679436;
+    border: none;
+    border-radius: 5px;
+    font-style: italic;
+    font-size: xx-large;
+    color: #EBF2FA;
+    padding: 10px;
+}
+
+fieldset{
+    border-color: #06668C;
+}
+#infoInputs, #infoTransport{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    border: 2px solid #06668C;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input, select{
+    border-radius: 5px;
+    border-color: #427AA1;
+}
+
+fieldset{
+    padding-top: 20px;
+}
+
+fieldset input[type="text"], fieldset select, fieldset input[type="date"], fieldset input[type="email"]{
+    position: relative;
+    left: 125px;
+    top: -20px;
+    width: 200px;
+}
+#informations select{
+    width: min-content;
+}
+
+li input[type="text"]{
+    width: 95%;
+    height: 75px;
+}
+
+
+#startbtDiv{
+    display: flex;
+    justify-content: center;
+}

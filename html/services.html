@@ -45,12 +45,64 @@
     </nav>
 </header>
 <main>
-    <section id = "">
+    <section id = "transports">
+        <form method="post" name="Quiz" action="#" class="box" id="transportForm" onsubmit="return false">
+            <fieldset id="transportFieldset">
+                <legend>Estimation tarif transports</legend>
+                <div class="inputsToHide" id="infoTransport">
+                    <label>Name:</label>
+                    <input type="text" required><br>
 
+                    <label>Surname:</label>
+                    <input type="text" required><br>
+
+                    <label>Birthdate:</label>
+                    <input type="date" required><br>
+
+                    <label>Mail address:</label>
+                    <input type="email" required><br>
+
+                    <label>Status :</label>
+                    <select required>
+                        <option value="NotSelected">Select your status</option>
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                    </select>
+                </div>
+                <input class="inputsToHide" type="button" value="Estimer" onclick="quizAlert()">
+            </fieldset>
+        </form>
     </section>
 
-    <section id = "Certif">
+    <section id = "locations">
+        <form method="post" name="Quiz" action="#" class="box" id="QuizId" onsubmit="return false">
+            <fieldset id="informations">
+                <legend>Estimation tarif Location</legend>
+                <div class="inputsToHide" id="infoInputs">
+                    <label>Name:</label>
+                    <input type="text" required><br>
 
+                    <label>Surname:</label>
+                    <input type="text" required><br>
+
+                    <label>Birthdate:</label>
+                    <input type="date" required><br>
+
+                    <label>Mail address:</label>
+                    <input type="email" required><br>
+
+                    <label>Status :</label>
+                    <select required>
+                        <option value="NotSelected">Select your status</option>
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                    </select>
+                </div>
+                <div class="inputsToHide" id="startbtDiv">
+                    <input class="inputsToHide" type="button" value="Estimer" onclick="quizAlert()">
+                </div>
+            </fieldset>
+        </form>
     </section>
 </main>
 <footer>
