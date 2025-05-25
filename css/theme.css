@@ -17,10 +17,25 @@ html,body {
 
 header h1 {
     font-family: 'BebasNeue', sans-serif;
-    color: #40739e;
+    color: #273c75;
     font-size: 100px;
     margin: 0;
     padding: 0;
+    letter-spacing: 4px;
+}
+
+header h2{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: monospace;
+    color: #f5f6fa;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 0px 4px;
 }
 
 header{
@@ -28,13 +43,17 @@ header{
     background-image: url("../images/desCamions.jpg");
     background-size: cover;
     height: min-content;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
+    width: 100%;
+    display: block;
 }
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    position: relative;
+    top: 65px;
 }
 nav a{
     text-decoration: none;
@@ -55,17 +74,18 @@ nav a{
 }
 
 .menu-item {
-    background-color: #192a56;
+    background-color: #192a56e0;
     position: relative;
-    padding: 10px;
+    padding:    9px 5px;
+    border-radius: 5px;
     margin: 5px;
 }
 
 .menu-item ul {
     display: none;
     position: absolute;
-    min-width: 300px;
-    z-index: 1000;
+    min-width: 100px;
+    z-index: 500;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -74,11 +94,13 @@ nav a{
 }
 
 .menu-item ul li {
-    background-color: #273c75;
-    padding: 5px;
-    margin: 2px;
-    border-radius: 5px;
+    background-color: #dcdde1;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 5px;
     list-style-type: none;
+    text-align: -webkit-left;
+
 }
 
 .submenu {
@@ -101,6 +123,13 @@ nav a{
     display: block;
     padding: 10px;
     text-decoration: none;
+    background-color: #dcdcdc;
+    color: #000;
+    white-space: nowrap;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+
 }
 
 .submenu li a:hover {
