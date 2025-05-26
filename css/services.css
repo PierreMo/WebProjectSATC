@@ -4,24 +4,10 @@ form{
     flex-direction: column;
 }
 
-input[type ="button"], button{
-/align-self: center;
-    background-color: #679436;
-    border: none;
-    border-radius: 5px;
-    font-style: italic;
-    font-size: xx-large;
-    color: #EBF2FA;
-    padding: 10px;
-}
-
 fieldset{
     border-color: #06668C;
-}
-#infoInputs, #infoTransport{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    border-radius: 4px;
+    margin-top: 20px;
 }
 legend{
     border: 2px solid #06668C;
@@ -29,32 +15,93 @@ legend{
     padding: 5px;
 }
 
-input, select{
-    border-radius: 5px;
-    border-color: #427AA1;
-}
-
 fieldset{
     padding-top: 20px;
 }
 
-fieldset input[type="text"], fieldset select, fieldset input[type="date"], fieldset input[type="email"]{
-    position: relative;
-    left: 125px;
-    top: -20px;
-    width: 200px;
-}
-#informations select{
-    width: min-content;
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
 }
 
-li input[type="text"]{
-    width: 95%;
-    height: 75px;
+label {
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
 }
 
+.number-input, input[type="text"], input[type="date"], input[type="email"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
 
-#startbtDiv{
+.number-input:focus, input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+.number-input::placeholder, input[type="text"]::placeholder, input[type="date"]::placeholder, input[type="email"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+#startbtDiv {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="button"] {
+    background-color: #06668C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #427AA1;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+
+.with-unit {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.with-unit .number-input {
+    padding-right: 40px;
+}
+
+.unit {
+    position: absolute;
+    right: 10px;
+    color: #7f8c8d;
+    font-size: 16px;
 }

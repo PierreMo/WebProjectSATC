@@ -1,21 +1,47 @@
-.teamMember{
+.teamMember {
     margin: 0 3% 2% 3%;
     width: 14%;
-
+    position: relative;
 }
 
-
-
-.team{
+.team {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.name{
-    position: absolute;
-    background-color: red;
+.image-container {
+    position: relative;
+    overflow: hidden;
 }
-.description{
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+}
+
+.info-container {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    transform: translateY(calc(100% - 30px));
+    transition: transform 0.3s ease;
+}
+
+.teamMember:hover .info-container {
+    transform: translateY(0);
+}
+
+.name {
+    margin: 0;
+    font-weight: bold;
+}
+
+.description {
+    margin: 10px 0 0;
+    font-size: 0.9em;
 }

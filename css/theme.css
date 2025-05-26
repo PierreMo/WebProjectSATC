@@ -55,13 +55,15 @@ nav{
     position: relative;
     top: 65px;
 }
-nav a{
+.menu-item > a{
     text-decoration: none;
     background-color: #dedce1;
     padding: 5px;
     font-size: 20px;
     border-radius: 5px;
     width: 13%;
+    color: #427AA1;
+    position: relative;
 }
 
 #menu {
@@ -70,15 +72,13 @@ nav a{
     list-style-type: none;
     justify-content: space-between;
     padding: 0;
-    margin: 0;
+    margin: 0 20px 0 20px;
 }
 
 .menu-item {
-    background-color: #192a56e0;
     position: relative;
-    padding:    9px 5px;
+    padding: 9px 5px;
     border-radius: 5px;
-    margin: 5px;
 }
 
 .menu-item ul {
@@ -87,6 +87,7 @@ nav a{
     min-width: 100px;
     z-index: 500;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    top: inherit;
 }
 
 .menu-item:hover ul {

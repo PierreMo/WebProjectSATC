@@ -24,19 +24,22 @@
         </article>
         <article class="menu-item">
             <a href="./team.html">Notre Équipe</a>
+            <ul class="submenu">
+                <li><a href="./team.html#managers">Nos dirigeants</a></li>
+                <li><a href="./team.html#collaborators">Nos collaborateurs</a></li>
+            </ul>
         </article>
         <article class="menu-item">
             <a href="./services.html">Nos Services</a>
             <ul class="submenu">
-                <li><a href="./index.html#Livraison">Estimation : Transports</a></li>
-                <li><a href="./index.html#Location">Estimation : Locations</a></li>
+                <li><a href="./services.html#delivery">Estimation : Transports</a></li>
+                <li><a href="./services.html#rent">Estimation : Locations</a></li>
             </ul>
         </article>
         <article class="menu-item">
             <a href="./contact.html">Nous Contacter</a>
             <ul class="submenu">
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./contact.html">Contact+</a></li>
+                <li><a href="./contact.html">Coordonnées</a></li>
             </ul>
         </article>
         <article class="menu-item">
@@ -48,62 +51,73 @@
     </nav>
 </header>
 <main>
-    <section id = "transports">
+    <section id = "delivery">
         <form method="post" name="Quiz" action="#" class="box" id="transportForm" onsubmit="return false">
             <fieldset id="transportFieldset">
                 <legend>Estimation tarif transports</legend>
-                <div class="inputsToHide" id="infoTransport">
-                    <label>Name:</label>
-                    <input type="text" required><br>
+                <div id="infoTransport">
+                    <div class="input-container">
+                        <div class="with-unit">
+                            <label for="distanceTransport">Distance :</label>
+                            <input type="number" id="distanceTransport" class="number-input" placeholder="Entrez la distance...">
+                            <span class="unit">km</span>
+                        </div>
+                        <div class="with-unit">
+                            <label for="weightTransport">Poids :</label>
+                            <input type="number" id="weightTransport" class="number-input" placeholder="Entrez le poids...">
+                            <span class="unit">kg</span>
+                        </div>
 
-                    <label>Surname:</label>
-                    <input type="text" required><br>
+                        <div class="with-unit">
+                            <label for="volumeTransport">Volume :</label>
+                            <input type="number" id="volumeTransport" class="number-input" placeholder="Entrez le volume...">
+                            <span class="unit">m³</span>
+                        </div>
 
-                    <label>Birthdate:</label>
-                    <input type="date" required><br>
-
-                    <label>Mail address:</label>
-                    <input type="email" required><br>
-
-                    <label>Status :</label>
-                    <select required>
-                        <option value="NotSelected">Select your status</option>
-                        <option value="Student">Student</option>
-                        <option value="Teacher">Teacher</option>
-                    </select>
+                        <label for="frequency">Fréquence du besoin :</label>
+                        <select id="frequency" required>
+                            <option value="NotSelected">Une fois</option>
+                            <option value="Student">Annuel</option>
+                            <option value="Teacher">Biannuel</option>
+                            <option value="Teacher">Mensuel</option>
+                            <option value="Teacher">Hebdomadaire</option>
+                        </select>
+                    </div>
                 </div>
-                <input class="inputsToHide" type="button" value="Estimer" onclick="quizAlert()">
+                <input type="button" value="Estimer">
+                <div style="display: none" id="estimationTransport"><p>Tarif estimé : </p></div>
+                <p>Cette estimation est à titre indicatif. Les transports peuvent dépendre d'autres facteurs du marché.</p>
             </fieldset>
         </form>
     </section>
 
-    <section id = "locations">
+    <section id = "rent">
         <form method="post" name="Quiz" action="#" class="box" id="QuizId" onsubmit="return false">
-            <fieldset id="informations">
+            <fieldset id="rentFieldset">
                 <legend>Estimation tarif Location</legend>
-                <div class="inputsToHide" id="infoInputs">
-                    <label>Name:</label>
-                    <input type="text" required><br>
+                <div class="inputsToHide" id="infoRent">
+                    <div class="input-container">
+                        <div class="with-unit">
+                            <label for="distanceRent">Distance Maximum :</label>
+                            <input type="number" id="distanceRent" class="number-input" placeholder="Entrez la distance..." min="5">
+                            <span class="unit">km</span>
+                        </div>
+                        <div class="with-unit">
+                            <label for="durationRent">Durée de Location :</label>
+                            <input type="number" id="durationRent" class="number-input" placeholder="Entrez le poids..." min="1">
+                            <span class="unit">jours</span>
+                        </div>
 
-                    <label>Surname:</label>
-                    <input type="text" required><br>
-
-                    <label>Birthdate:</label>
-                    <input type="date" required><br>
-
-                    <label>Mail address:</label>
-                    <input type="email" required><br>
-
-                    <label>Status :</label>
-                    <select required>
-                        <option value="NotSelected">Select your status</option>
-                        <option value="Student">Student</option>
-                        <option value="Teacher">Teacher</option>
-                    </select>
+                        <div class="with-unit">
+                            <label for="volumeRent">Volume Nécessaire :</label>
+                            <input type="number" id="volumeRent" class="number-input" placeholder="Entrez le volume..." min="6">
+                            <span class="unit">m³</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="inputsToHide" id="startbtDiv">
-                    <input class="inputsToHide" type="button" value="Estimer" onclick="quizAlert()">
-                </div>
+                <input type="button" value="Estimer">
+                <div style="display: none" id="estimationRent"><p>Tarif estimé : </p></div>
+                <p>Cette estimation est à titre indicatif. Les transports peuvent dépendre d'autres facteurs du marché.</p>
             </fieldset>
         </form>
     </section>
