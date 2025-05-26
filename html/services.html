@@ -5,6 +5,7 @@
     <title>SATC</title>
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/services.css">
+    <script src="../js/services.js"></script>
 </head>
 <body>
 <div id="loader">
@@ -58,18 +59,18 @@
                 <div id="infoTransport">
                     <div class="input-container">
                         <div class="with-unit">
-                            <label for="distanceTransport">Distance :</label>
+                            <label for="distanceTransport">Distance Trajet :</label>
                             <input type="number" id="distanceTransport" class="number-input" placeholder="Entrez la distance...">
                             <span class="unit">km</span>
                         </div>
                         <div class="with-unit">
-                            <label for="weightTransport">Poids :</label>
+                            <label for="weightTransport">Poids Colis :</label>
                             <input type="number" id="weightTransport" class="number-input" placeholder="Entrez le poids...">
                             <span class="unit">kg</span>
                         </div>
 
                         <div class="with-unit">
-                            <label for="volumeTransport">Volume :</label>
+                            <label for="volumeTransport">Volume Colis :</label>
                             <input type="number" id="volumeTransport" class="number-input" placeholder="Entrez le volume...">
                             <span class="unit">m³</span>
                         </div>
@@ -77,14 +78,14 @@
                         <label for="frequency">Fréquence du besoin :</label>
                         <select id="frequency" required>
                             <option value="NotSelected">Une fois</option>
-                            <option value="Student">Annuel</option>
-                            <option value="Teacher">Biannuel</option>
-                            <option value="Teacher">Mensuel</option>
-                            <option value="Teacher">Hebdomadaire</option>
+                            <option value="Annuel">Annuel</option>
+                            <option value="Biannuel">Biannuel</option>
+                            <option value="Mensuel">Mensuel</option>
+                            <option value="Hebdomadaire">Hebdomadaire</option>
                         </select>
                     </div>
                 </div>
-                <input type="button" value="Estimer">
+                <input type="button" value="Estimer" onclick="estimateTransport()">
                 <div style="display: none" id="estimationTransport"><p>Tarif estimé : </p></div>
                 <p>Cette estimation est à titre indicatif. Les transports peuvent dépendre d'autres facteurs du marché.</p>
             </fieldset>
@@ -115,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <input type="button" value="Estimer">
+                <input type="button" value="Estimer" onclick="estimateLocation()">
                 <div style="display: none" id="estimationRent"><p>Tarif estimé : </p></div>
                 <p>Cette estimation est à titre indicatif. Les transports peuvent dépendre d'autres facteurs du marché.</p>
             </fieldset>
