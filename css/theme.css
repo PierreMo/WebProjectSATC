@@ -55,15 +55,24 @@ nav{
     position: relative;
     top: 90px;
 }
+
 .menu-item > a{
     text-decoration: none;
     background-color: #dedce1;
     padding: 5px;
     font-size: 20px;
     border-radius: 5px;
-    width: 13%;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #427AA1;
     position: relative;
+}
+.menu-item:last-child .submenu {
+    right: 0;
+    left: auto;
 }
 
 #menu {
@@ -100,38 +109,39 @@ nav{
     padding: 0px;
     margin: 5px;
     list-style-type: none;
-    text-align: -webkit-left;
+    text-align: left;
 
 }
 
 .submenu {
     position: absolute;
-    top: 100%;
     background-color: #273c75;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.4s ease;
     border-radius: 5px;
     z-index: 1000;
+    margin-top: 0;
+    padding-top: 0;
+    padding: 0;
 }
+
 
 .menu-item:hover .submenu {
     max-height: 300px;
 }
 
 .submenu li a {
-    color: white;
+    color: #000;
     display: block;
     padding: 10px;
     text-decoration: none;
     background-color: #dcdcdc;
-    color: #000;
     white-space: nowrap;
     border-radius: 5px;
-    margin: 5px;
-    display: inline-block;
-
+    margin: 0;
 }
+
 
 .submenu li a:hover {
     background-color: #40739e;
