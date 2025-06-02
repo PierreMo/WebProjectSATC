@@ -17,6 +17,7 @@
 #chat-box{
     overflow-y: scroll;
     height: 80%;
+    padding-top: 10px;
 }
 
 #chat-command{
