@@ -1,0 +1,245 @@
+{
+  "intents": [
+    {
+      "tag": "services_transport",
+      "patterns": [
+        "Quels sont vos services de transport ?",
+        "Que proposez-vous comme prestations ?",
+        "Quels types de transport offrez-vous ?",
+        "Quels services de logistique avez-vous ?",
+        "Quelles sont vos solutions de transport ?"
+      ],
+      "responses": [
+        "La SATC propose des services d'affrètement, de transport routier de marchandises, de logistique, de stockage et de location de véhicules.",
+        "Nous offrons des prestations complètes incluant le transport de fret, la gestion des stocks, la préparation de commandes et la location de véhicules industriels.",
+        "Nos services couvrent l'affrètement, le transport express, la logistique et la location de poids lourds et remorques."
+      ]
+    },
+    {
+      "tag": "zones_geographiques",
+      "patterns": [
+        "Dans quelles régions opérez-vous ?",
+        "Où effectuez-vous des livraisons ?",
+        "Quelles sont vos zones de couverture ?",
+        "Intervenez-vous en Île-de-France ?",
+        "Livrez-vous dans le Grand Ouest ?"
+      ],
+      "responses": [
+        "Nous opérons principalement en Île-de-France et dans le Grand Ouest, avec des établissements à Fontenay-aux-Roses et Les Sorinières.",
+        "Nos services couvrent l'ensemble du territoire national, avec une présence renforcée en région parisienne et dans l'ouest de la France.",
+        "La SATC assure des livraisons et des prestations logistiques dans plusieurs régions, notamment en Île-de-France et en Loire-Atlantique."
+      ]
+    },
+    {
+      "tag": "location_vehicules",
+      "patterns": [
+        "Proposez-vous la location de véhicules ?",
+        "Puis-je louer un camion chez vous ?",
+        "Avez-vous des remorques à louer ?",
+        "Est-il possible de louer un poids lourd ?",
+        "Offrez-vous des services de location de véhicules industriels ?"
+      ],
+      "responses": [
+        "Oui, nous proposons la location de poids lourds, remorques, semi-remorques, tracteurs et véhicules légers.",
+        "La SATC offre des services de location de véhicules industriels adaptés à vos besoins logistiques.",
+        "Vous pouvez louer différents types de véhicules de transport chez nous, selon vos exigences."
+      ]
+    },
+    {
+      "tag": "contact_information",
+      "patterns": [
+        "Comment puis-je vous contacter ?",
+        "Quel est votre numéro de téléphone ?",
+        "Où êtes-vous situés ?",
+        "Quelle est votre adresse ?",
+        "Comment prendre rendez-vous avec vous ?"
+      ],
+      "responses": [
+        "Vous pouvez nous contacter au 02 40 13 01 40. Notre siège est situé au 1 Rue Léon Bloy, 92260 Fontenay-aux-Roses.",
+        "Pour toute demande, appelez-nous au 02 40 13 01 40 ou rendez-vous à notre siège à Fontenay-aux-Roses.",
+        "Notre adresse est le 1 Rue Léon Bloy, 92260 Fontenay-aux-Roses. N'hésitez pas à nous appeler au 02 40 13 01 40."
+      ]
+    },
+    {
+      "tag": "dirigeant",
+      "patterns": [
+        "Qui est le dirigeant de la SATC ?",
+        "Qui gère la société ?",
+        "Qui est le responsable de l'entreprise ?",
+        "Qui est à la tête de la SATC ?",
+        "Qui est le gérant actuel ?"
+      ],
+      "responses": [
+        "Le gérant actuel de la SATC est Philippe Launay.",
+        "Philippe Launay est le dirigeant de la Société Atlantique Transports et Commission.",
+        "La société est dirigée par M. Philippe Launay."
+      ]
+    },
+    {
+      "tag": "historique_societe",
+      "patterns": [
+        "Depuis quand existe la SATC ?",
+        "Quelle est l'histoire de votre entreprise ?",
+        "Quand a été fondée la SATC ?",
+        "Depuis combien de temps êtes-vous en activité ?",
+        "Quelle est votre expérience dans le transport ?"
+      ],
+      "responses": [
+        "La SATC a été fondée en 1982 et possède plus de 40 ans d'expérience dans le secteur du transport.",
+        "Notre entreprise est active depuis 1982, offrant des services de transport et de logistique depuis plus de quatre décennies.",
+        "Avec une fondation en 1982, la SATC bénéficie d'une longue expérience dans le domaine du transport routier."
+      ]
+    },
+    {
+      "tag": "types_transport",
+      "patterns": [
+        "Quels types de marchandises transportez-vous ?",
+        "Transportez-vous des colis ?",
+        "Faites-vous du transport express ?",
+        "Gérez-vous des lots complets ?",
+        "Proposez-vous du groupage ?"
+      ],
+      "responses": [
+        "Nous transportons divers types de marchandises, incluant des colis, des lots complets, du groupage et des services express.",
+        "La SATC offre des solutions de transport adaptées à vos besoins, qu'il s'agisse de colis, de demi-lots ou de lots complets.",
+        "Oui, nous proposons des services de transport express, de groupage et de gestion de lots complets."
+      ]
+    },
+    {
+      "tag": "services_logistiques",
+      "patterns": [
+        "Avez-vous des services de logistique ?",
+        "Proposez-vous la gestion des stocks ?",
+        "Faites-vous de la préparation de commandes ?",
+        "Offrez-vous des services de conditionnement ?",
+        "Gérez-vous des entrepôts ?"
+      ],
+      "responses": [
+        "Oui, nous proposons des services de logistique incluant la gestion des stocks, la préparation de commandes, le conditionnement de palettes et la distribution.",
+        "La SATC offre des solutions logistiques complètes, y compris le stockage, la préparation de commandes et la distribution.",
+        "Nos services logistiques comprennent la gestion des entrepôts, le conditionnement et la distribution de marchandises."
+      ]
+    },
+    {
+      "tag": "affretement",
+      "patterns": [
+        "Proposez-vous des services d'affrètement ?",
+        "Faites-vous de l'affrètement routier ?",
+        "Offrez-vous des solutions d'affrètement ?",
+        "Gérez-vous l'organisation des transports ?",
+        "Avez-vous des services d'affrètement disponibles ?"
+      ],
+      "responses": [
+        "Oui, la SATC propose des services d'affrètement et d'organisation des transports adaptés à vos besoins.",
+        "Nous offrons des solutions d'affrètement routier pour optimiser vos opérations de transport.",
+        "Nos services incluent l'affrètement et la coordination logistique pour assurer une livraison efficace."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Je suis désolé, je n'ai pas compris votre demande. Pouvez-vous reformuler votre question ?",
+        "Excusez-moi, je ne suis pas certain de comprendre. Pourriez-vous préciser votre demande ?",
+        "Je ne suis pas sûr de saisir votre question. Pouvez-vous la reformuler différemment ?"
+      ]
+    },
+
+    {
+      "tag": "home_presentation",
+      "patterns": [
+        "Que trouve-t-on sur la page d'accueil ?",
+        "C'est quoi la page d'accueil ?",
+        "Je veux en savoir plus sur votre présentation",
+        "Quelle est votre mission ?",
+        "Parlez-moi de votre entreprise en quelques mots"
+      ],
+      "responses": [
+        "La page d'accueil vous présente la SATC, ses valeurs, ses activités principales ainsi qu’un aperçu rapide de ses services.",
+        "Vous y trouverez une présentation générale de la SATC, ses engagements et ses domaines d’intervention."
+      ]
+    },
+    {
+      "tag": "home_certifications",
+      "patterns": [
+        "Avez-vous des certifications ?",
+        "Où sont vos labels qualité ?",
+        "Quelles sont vos certifications ?",
+        "Êtes-vous certifiés ?"
+      ],
+      "responses": [
+        "Oui, la SATC met en avant ses certifications sur la page d'accueil, preuve de notre engagement pour la qualité et la sécurité.",
+        "Nos certifications sont affichées sur la page d'accueil pour garantir notre sérieux dans le domaine du transport et de la logistique."
+      ]
+    },
+    {
+      "tag": "home_directeur",
+      "patterns": [
+        "Y a-t-il un mot du directeur ?",
+        "Où puis-je lire le mot du dirigeant ?",
+        "Le directeur a-t-il un message ?",
+        "Qu'a dit le directeur ?"
+      ],
+      "responses": [
+        "Oui, le mot du directeur Philippe Launay est disponible sur la page d'accueil pour partager la vision et les valeurs de l’entreprise.",
+        "Sur la page d'accueil, le dirigeant Philippe Launay vous adresse un message pour expliquer la mission et les ambitions de la SATC."
+      ]
+    },
+    {
+      "tag": "page_equipe",
+      "patterns": [
+        "Qui travaille chez vous ?",
+        "Où puis-je voir votre équipe ?",
+        "Qui sont les dirigeants ?",
+        "Avez-vous une page avec vos collaborateurs ?",
+        "Qui sont les membres de la SATC ?"
+      ],
+      "responses": [
+        "La page Équipe vous présente les dirigeants comme Philippe Launay ainsi que l'ensemble des collaborateurs de la SATC.",
+        "Vous pouvez découvrir nos équipes, des dirigeants aux collaborateurs, sur la page dédiée à l'équipe."
+      ]
+    },
+    {
+      "tag": "page_services_site",
+      "patterns": [
+        "Quelles sont vos offres ?",
+        "Je veux voir vos services",
+        "Où puis-je consulter vos prestations ?",
+        "Y a-t-il une page sur vos locations et livraisons ?",
+        "Quels services sont disponibles sur le site ?"
+      ],
+      "responses": [
+        "La page Services vous détaille toutes nos prestations : location de véhicules, affrètement et transport de marchandises.",
+        "Vous trouverez sur notre page Services des informations sur la livraison, la logistique, le stockage et la location de véhicules."
+      ]
+    },
+    {
+      "tag": "page_contact",
+      "patterns": [
+        "Comment vous contacter ?",
+        "Y a-t-il une page contact ?",
+        "Où sont vos coordonnées ?",
+        "Comment puis-je vous joindre ?",
+        "Quelle est votre adresse mail ou téléphone ?"
+      ],
+      "responses": [
+        "Vous pouvez retrouver toutes nos coordonnées (téléphone, adresse, email) sur la page 'Nous contacter'.",
+        "La page contact contient toutes les informations nécessaires pour nous joindre, que ce soit par téléphone, email ou courrier."
+      ]
+    },
+    {
+      "tag": "page_qui_sommes_nous",
+      "patterns": [
+        "Qui a fait le site ?",
+        "Qui êtes-vous ?",
+        "Y a-t-il une page qui explique le projet ?",
+        "Qui sont les créateurs du site ?",
+        "Parlez-moi de la page Qui sommes-nous"
+      ],
+      "responses": [
+        "La page 'Qui sommes-nous' présente les auteurs du site : Alexis Launay-Schapman et Pierre Mouriès, ainsi que leur travail de conception.",
+        "Cette page met en lumière les créateurs du site, Alexis Launay-Schapman et Pierre Mouriès, qui ont développé le site avec soin et professionnalisme."
+      ]
+    }
+  ]
+}

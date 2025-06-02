@@ -1,0 +1,86 @@
+#chat-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-container{
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#chat-box{
+    height: 260px;
+    width: 400px;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-command{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#chat-command input[type="text"]{
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-command input[type="button"]{
+    height: 40px;
+    width: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+#msg-container{
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    width: 100%;
+    padding: 0;
+}
+
+.message{
+    padding: 5px;
+    border-radius: 5px;
+    color: #1d3b5a;
+}
+
+.user-message{
+    align-self: end;
+    background-color: #A4BD01;
+    margin-left: 40px;
+}
+
+.bot-message{
+    align-self: start;
+    background-color: #b9d7ef;
+    margin-right: 40px;
+}
+
+#history-separation{
+    background-color: #efefef;
+    text-align: center;
+    color: #c5bcd6;
+}
+
+.date{
+    font-size: xx-small;
+}

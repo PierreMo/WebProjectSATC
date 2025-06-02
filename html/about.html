@@ -80,9 +80,26 @@
             </ul>
 
         </ol>
-
-
     </section>
+
+    <section id="chat-section">
+        <h1>Chatbot - GreenIT</h1>
+        <div id="chat-container">
+            <div id="chat-box">
+
+            </div>
+            <div id="chat-command">
+                <label>
+                    <input id="chatInput" type="text" placeholder="Enter your question">
+                </label>
+                <label>
+                    <input type="button" Value="Send" onclick="fetchJSON('../json/intents.json')">
+                </label>
+            </div>
+        </div>
+    </section>
+
+
 
 
 </main>
@@ -92,5 +109,6 @@
     <p>All rights reserved.</p>
 </footer>
 <script src="../js/animation.js"></script>
+<script src="../js/chatbot.js"></script>
 </body>
 </html>
