@@ -72,7 +72,7 @@ function showMessage(message, type, date){
 }
 
 function processMessage(intents, message){
-    let response = "I'm sorry, I'm not sure I understand.";
+    let response = "Je suis désolé, je ne suis pas sûr d'avoir compris.";
     intents.forEach(intent => {
         intent.patterns.forEach(pattern => {
             if(message.toLowerCase().includes(pattern.toLowerCase())) {
