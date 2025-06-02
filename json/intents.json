@@ -1,6 +1,48 @@
 {
   "intents": [
     {
+      "tag": "greet",
+      "patterns": [
+        "Bonjour",
+        "Salut",
+        "Hello",
+        "Coucou",
+        "Bonsoir",
+        "Hey",
+        "Yo",
+        "Allô",
+        "Bonjour SATC",
+        "Hello tout le monde"
+      ],
+      "responses": [
+        "Bonjour et bienvenue chez SATC ! Comment puis-je vous aider ?",
+        "Salut ! Vous cherchez une info sur nos services ?",
+        "Bienvenue ! Posez-moi une question sur nos services ou notre société.",
+        "Bonjour ! Vous pouvez me poser des questions sur le transport, nos équipes ou nos services."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Aide",
+        "Help",
+        "J'ai besoin d'aide",
+        "Que puis-je faire ?",
+        "Quelles sont les commandes ?",
+        "Liste des options",
+        "Je ne sais pas quoi demander",
+        "Tu fais quoi ?",
+        "Montre-moi ce que je peux demander",
+        "Quelles questions puis-je poser ?"
+      ],
+      "responses": [
+        "Voici ce que je peux faire pour vous :\n- Informations sur nos services de transport et de logistique\n- Détails sur nos zones de livraison et nos véhicules en location\n- Coordonnées de contact\n- Présentation de l'équipe SATC\n- Détails sur le site (créateurs, structure, contenu)\n- Histoire de l'entreprise et mot du directeur",
+        "Je peux vous aider avec :\n- Nos services (affrètement, livraison, location)\n- Informations sur notre équipe ou l’entreprise\n- Comment nous contacter\n- Détails sur les pages du site\nN'hésitez pas à poser une question dans ces domaines.",
+        "Je réponds à des questions sur :\n• Transport\n• Logistique\n• Location de véhicules\n• Equipe SATC\n• Contact et coordonnées\n• Présentation de la société\nEt plus encore !"
+      ]
+    },
+
+    {
       "tag": "services_transport",
       "patterns": [
         "Quels sont vos services de transport ?",
