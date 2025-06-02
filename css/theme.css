@@ -19,14 +19,14 @@ header h1 {
     font-family: 'BebasNeue', sans-serif;
     color: #273c75;
     font-size: 100px;
-    margin: 0;
+    margin: 0 0 0 6px;
     padding: 0;
     letter-spacing: 4px;
 }
 
 header h2{
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     font-size: 22px;
@@ -34,8 +34,8 @@ header h2{
     font-family: monospace;
     color: #f5f6fa;
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 15px;
-    padding: 0px 4px;
+    border-radius: 13px;
+    padding: 4px;
 }
 
 header{
@@ -69,7 +69,19 @@ nav{
     text-overflow: ellipsis;
     color: #427AA1;
     position: relative;
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(64, 115, 158, 0.5), 4px 4px 0px 0px rgba(71, 127, 174, 0.5), 6px 6px 0px 0px rgba(77, 139, 190, 0.5), 8px 8px 0px 0px rgba(84, 150, 206, 0.5), 10px 10px 0px 0px rgba(90, 162, 223, 0.5), 2px 2px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 0px 0px rgba(64, 115, 158, 0.5), 4px 4px 0px 0px rgba(71, 127, 174, 0.5), 6px 6px 0px 0px rgba(77, 139, 190, 0.5), 8px 8px 0px 0px rgba(84, 150, 206, 0.5), 10px 10px 0px 0px rgba(90, 162, 223, 0.5), 2px 2px 15px 5px rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.menu-item > a:hover {
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(64, 115, 158, 0.5), 10px 10px 0px 0px rgba(71, 127, 174, 0.5), 15px 15px 0px 0px rgba(77, 139, 190, 0.5), 20px 20px 0px 0px rgba(84, 150, 206, 0.5);
+    box-shadow: 5px 5px 0px 0px rgba(64, 115, 158, 0.5), 10px 10px 0px 0px rgba(71, 127, 174, 0.5), 15px 15px 0px 0px rgba(77, 139, 190, 0.5), 20px 20px 0px 0px rgba(84, 150, 206, 0.5);
+    transform: scale(1.05);
+    color: #4f8cb6;
+
+}
+
 .menu-item:last-child .submenu {
     right: 0;
     left: auto;
@@ -106,11 +118,10 @@ nav{
 .menu-item ul li {
     background-color: #dcdde1;
     border-radius: 10px;
-    padding: 0px;
+    padding: 0;
     margin: 5px;
     list-style-type: none;
     text-align: left;
-
 }
 
 .submenu {
@@ -144,7 +155,10 @@ nav{
 
 
 .submenu li a:hover {
-    background-color: #40739e;
+    background-color: #273c75;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 27px -8px #FFFFFF;
+    box-shadow: 0px 0px 27px -8px #FFFFFF;
 }
 
 .submenu {
