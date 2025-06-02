@@ -5,8 +5,12 @@
     <title>SATC</title>
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/about.css">
+    <script src="../js/script.js"></script>
 </head>
 <body>
+
+<audio id="klaxonSound" src="../mp3/bruitKlaxonCamion.mp3"></audio>
+
 <div id="loader">
     <img src="../images/truck.png" alt="Camion en chargement" id="truck">
 </div>
@@ -45,14 +49,15 @@
         <article class="menu-item">
             <a href="./about.html">À propos</a>
             <ul class="submenu">
-                <li><a href="./about.html">Qui sommes-nous ?</a></li>
+                <li><a href="./about.html#chat-section">Dialoguer avec notre Chatbot</a></li>
+                <li><a href="./about.html#about-section">Qui sommes-nous ?</a></li>
             </ul>
         </article>
     </nav>
 </header>
 <main>
     <section id="chat-section">
-        <h1>Chatbot - Société SATC</h1>
+        <h1>Chatbot - SATC</h1>
         <div id="chat-container">
             <div id="chat-box"></div>
             <div id="chat-command">
@@ -63,7 +68,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="about-section">
         <h1>Qui a bâti le site ?</h1>
         <ul>
             <li style="list-style: none">2 éleves de INT-3 :</li>
@@ -91,6 +96,7 @@
                 <li>Animation de chargement </li>
                 <li>Calculs des estimations (2)</li>
                 <li>Chatbot (from lab4)</li>
+                <li>Playing a klaxon sound on click</li>
             </ul></li>
             <li>Autres :
             <ul>
