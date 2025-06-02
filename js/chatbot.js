@@ -105,7 +105,7 @@ function loadMessages(){
     let chatBox = document.getElementById("chat-box");
     let separation = document.createElement("p");
     separation.id = "history-separation";
-    separation.textContent = "⬆Text above is from sessionsStorage.️⬆"
+    separation.textContent = "⬆ Messages de notre dernière discussion.️ ⬆"
     chatBox.appendChild(separation);
     chatBox.scrollTop = chatBox.scrollHeight;
 }
